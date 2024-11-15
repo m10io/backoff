@@ -1,6 +1,6 @@
-use instant::Instant;
 use std::marker::PhantomData;
 use std::time::Duration;
+use web_time::Instant;
 
 use crate::backoff::Backoff;
 use crate::clock::Clock;

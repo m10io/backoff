@@ -19,7 +19,7 @@ travis-ci = { repository = "ihrwein/backoff" }
 [dependencies]
 async_std_1 = { package = "async-std", version = "1.9", optional = true }
 futures-core = { version = "0.3.8", default-features = false, optional = true }
-instant = "0.1"
+web-time = "1.1"
 pin-project-lite = { version = "0.2.7", optional = true }
 rand = "0.8"
 getrandom = "0.2"
@@ -33,7 +33,6 @@ futures-executor = "0.3"
 
 [features]
 default = []
-wasm-bindgen = ["instant/wasm-bindgen", "getrandom/js"]
 futures = ["futures-core", "pin-project-lite"]
 tokio = ["futures", "tokio_1"]
 async-std = ["futures", "async_std_1"]

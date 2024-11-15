@@ -1,4 +1,4 @@
-use instant::Instant;
+use web_time::Instant;
 
 /// Clock returns the current time.
 pub trait Clock {
